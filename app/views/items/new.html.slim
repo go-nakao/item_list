@@ -2,3 +2,10 @@ h1 貸出品新規登録画面
 
 .nav.justify-content-end
   = link_to '貸出品一覧', items_path, class: 'nav-link'
+
+= form_with model: @item, local: true do |f|
+  .form_group
+    = f.label :item_name
+    br
+    = f.text_field :item_name, size: "50", class: 'form_control', id: 'item_name'
+  = f.submit nil, class: 'btn btn-primary'
