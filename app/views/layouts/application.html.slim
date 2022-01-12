@@ -11,6 +11,8 @@ html
     .app-title.navbar.navbar-expand-md.navbar-light.bg-light
       .navbar-brand ItemList
     .container
+      - if flash.notice.present?
+        .alert-success= flash.notice
       = yield
     footer
       p &copy; 2022 Go Nakao
