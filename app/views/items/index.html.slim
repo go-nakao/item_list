@@ -1,2 +1,15 @@
 h1 貸出品一覧
 = link_to '貸出品新規登録', new_item_path, class: 'btn-btn-primary'
+
+/ 下側のマージンを1rem
+.mb-3
+table.table.table-hover
+  thead.thead-default
+    tr
+      th= Item.human_attribute_name(:name)
+      th= Item.human_attribute_name(:created_at)
+  tbody
+    - @items.each do |item|
+      tr
+        td= item.item_name
+        td= item.created_at

@@ -7,5 +7,7 @@ h1 貸出品新規登録画面
   .form_group
     = f.label :item_name
     br
+    .mb-3
     = f.text_field :item_name, size: "50", class: 'form_control', id: 'item_name'
+  .mb-3
   = f.submit nil, class: 'btn btn-primary'
