@@ -115,12 +115,8 @@ GEM
     nokogiri (1.13.1)
       mini_portile2 (~> 2.7.0)
       racc (~> 1.4)
-<<<<<<< HEAD
-    popper_js (2.9.3)
-=======
     pg (0.20.0)
-    popper_js (2.9.2)
->>>>>>> refs/remotes/origin/main
+    popper_js (2.9.3)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
