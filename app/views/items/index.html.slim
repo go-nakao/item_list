@@ -13,3 +13,5 @@ table.table.table-hover
       tr
         td= item.item_name
         td= item.created_at
+        td
+          = link_to '削除', item, method: :delete, data: { confirm: "貸出品「#{item.item_name}」を削除しますか？", class: 'btn btn-danger' }
