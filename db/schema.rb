@@ -10,12 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_09_100350) do
+ActiveRecord::Schema.define(version: 2022_01_21_132820) do
 
   create_table "items", force: :cascade do |t|
     t.string "item_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "customer"
+    t.date "loan_date"
+    t.date "return_date"
   end
 
 end
