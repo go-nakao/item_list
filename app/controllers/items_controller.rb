@@ -15,6 +15,7 @@ class ItemsController < ApplicationController
 
   def create
     item = Item.new(item_params)
+    # binding.pry
     item.save!
     redirect_to items_url, notice: "貸出品「#{item.item_name}」を登録しました。"
   end
@@ -30,6 +31,6 @@ class ItemsController < ApplicationController
 
   def item_params
     # binding.pry
-    params.require(:item).permit(:item_name)
+    params.require(:item).permit(:item_name, :customer)
   end
 end

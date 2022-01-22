@@ -18,10 +18,9 @@ table.table.table-hover
         td= item.item_name
         td= l item.created_at, format: :long
         td= l item.updated_at, format: :long
-        / td= item.customer
         / td= item.loan_date
         / td= item.return_date
-        td= '得意先名'
+        td= item.customer
         td= '貸出日'
         td= '返却日'
         td

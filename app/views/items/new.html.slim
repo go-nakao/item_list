@@ -10,4 +10,10 @@ h1 貸出品新規登録画面
     .mb-3
     = f.text_field :item_name, size: "50", class: 'form_control', id: 'item_name'
   .mb-3
+  .form_group
+    = f.label :customer
+    br
+    .mb-3
+    = f.text_field :customer, size: "50", class: 'form_control', id: 'customer'
+  .mb-3
   = f.submit nil, class: 'btn btn-primary'
