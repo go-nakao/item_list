@@ -21,7 +21,7 @@ table.table.table-hover
         / td= item.loan_date
         / td= item.return_date
         td= item.customer
-        td= '貸出日'
-        td= '返却日'
+        td= item.loan_date
+        td= item.return_date
         td
           = link_to '削除', item, method: :delete, data: { confirm: "貸出品「#{item.item_name}」を削除しますか？", class: 'btn btn-danger' }

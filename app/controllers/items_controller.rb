@@ -31,6 +31,6 @@ class ItemsController < ApplicationController
 
   def item_params
     # binding.pry
-    params.require(:item).permit(:item_name, :customer)
+    params.require(:item).permit(:item_name, :customer, :loan_date, :return_date)
   end
 end
