@@ -18,10 +18,9 @@ table.table.table-hover
         td= item.item_name
         td= l item.created_at, format: :long
         td= l item.updated_at, format: :long
-        / td= item.loan_date
-        / td= item.return_date
         td= item.customer
         td= item.loan_date
         td= item.return_date
         td
-          = link_to '削除', item, method: :delete, data: { confirm: "貸出品「#{item.item_name}」を削除しますか？", class: 'btn btn-danger' }
+          = link_to '編集', edit_item_path(item), class: 'btn btn-primary me-3' 
+          = link_to '削除', item, method: :delete, data: { confirm: "貸出品「#{item.item_name}」を削除しますか？" }, class: 'btn btn-danger' 
