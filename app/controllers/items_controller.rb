@@ -32,6 +32,6 @@ class ItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:item).permit(:item_name, :customer, :loan_date, :return_date)
+    params.require(:item).permit(:item_name, :customer, :loan_date, :return_date, :remark)
   end
 end
