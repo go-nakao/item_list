@@ -14,7 +14,10 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
   end
 
-  def updated
+  def update
+    item = Item.find(params[:id]) #任意のアイテムを取得
+    item.update!(item_params) #情報を更新
+    redirect_to items_url, notice: "貸出品「#{item.item_name}」を更新しました。"
   end
 
   def create
