@@ -28,4 +28,10 @@ h1 貸出品新規登録画面
     .mb-3
     = f.date_field :return_date, class: 'form_control', id: 'return_date'
   .mb-3
+  .form_group
+    = f.label :remark
+    br
+    .mb-3
+    = f.text_area :remark, class: 'form_control', id: 'remark'
+  .mb-3
   = f.submit nil, class: 'btn btn-primary'

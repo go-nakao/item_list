@@ -21,4 +21,8 @@ h1 編集画面
     = f.label :return_date
     = f.date_field :return_date, class: 'form_control', id: 'return_date'
   .mb-3
+  .form_group
+    = f.label :remark
+    = f.text_area :remark, class: 'form_control', id: 'remark'
+  .mb-3
   = f.submit nil, class: 'btn btn-primary'
