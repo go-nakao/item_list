@@ -1,0 +1,27 @@
+/ フォームの共通化
+
+= form_with model: @item, local: true do |f|
+  .form_group
+    = f.label :item_name
+    = f.text_field :item_name, class: 'form-control', id: 'item_name'
+  .mb-3
+  .form_group
+    = f.label :customer
+    = f.text_field :customer, class: 'form-control', id: 'customer'
+  .mb-3
+  .form_group
+    = f.label :loan_date
+    br
+    = f.date_field :loan_date, class: 'form_control', id: 'loan_date'
+  .mb-3
+  .form_group
+    = f.label :return_date
+    br
+    = f.date_field :return_date, class: 'form_control', id: 'return_date'
+  .mb-3
+  .form_group
+    = f.label :remark
+    br
+    = f.text_area :remark, class: 'form_control', id: 'remark'
+  .mb-3
+  = f.submit nil, class: 'btn btn-primary'

@@ -3,26 +3,4 @@ h1 編集画面
 .nav.justify-content-end
   = link_to '貸出品一覧', items_path, class: 'nav-link'
 
-= form_with model: @item, local: true do |f|
-  .form-group
-    = f.label :item_name
-    = f.text_field :item_name, class: 'form-control', id: 'item_name'
-
-  .mb-3
-  .form-group
-    = f.label :customer
-    = f.text_field :customer, class: 'form-control', id: 'customer'
-  .mb-3
-  .form_group
-    = f.label :loan_date
-    = f.date_field :loan_date, class: 'form_control', id: 'loan_date'
-  .mb-3
-  .form_group
-    = f.label :return_date
-    = f.date_field :return_date, class: 'form_control', id: 'return_date'
-  .mb-3
-  .form_group
-    = f.label :remark
-    = f.text_area :remark, class: 'form_control', id: 'remark'
-  .mb-3
-  = f.submit nil, class: 'btn btn-primary'
+= render partial: 'form', locals: { item: @item }
