@@ -1,5 +1,6 @@
 / フォームの共通化 new edit views
 
+/ item.errorsがあるかどうか（true）
 - if item.errors.present?
   ul#errors_explanation
     - item.errors.full_messages.each do |message|
