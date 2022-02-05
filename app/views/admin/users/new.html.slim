@@ -1,6 +1,11 @@
 h1 ユーザー登録
 p ※管理者権限を付与してください。
 
+- if @user.errors.present?
+  ul#errors_explanation
+    - @user.errors.full_messages.each do |message|
+      li = message
+
 = form_with model: [:admin, @user], local: true do |f|
   .form-group
     = f.label :name, '名前'
