@@ -1,5 +1,6 @@
 h1 貸出品一覧
-= link_to '貸出品新規登録', new_item_path, class: 'btn-btn-primary'
+= link_to '貸出品新規登録', new_item_path, class: 'btn btn-primary me-3'
+= link_to '新規ユーザー登録', new_admin_user_path, class: 'btn btn-success'
 
 / 下側のマージンを1rem
 .mb-3
@@ -22,5 +23,5 @@ table.table.table-hover
         td= item.return_date
         td= item.remark
         td
-          = link_to '編集', edit_item_path(item), class: 'btn btn-primary me-3' 
-          = link_to '削除', item, method: :delete, data: { confirm: "貸出品「#{item.item_name}」を削除しますか？" }, class: 'btn btn-danger' 
+          = link_to '編集', edit_item_path(item), class: 'btn btn-primary me-3'
+          = link_to '削除', item, method: :delete, data: { confirm: "貸出品「#{item.item_name}」を削除しますか？" }, class: 'btn btn-danger'
