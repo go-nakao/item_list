@@ -13,7 +13,7 @@ html
 
       ul.navbar-nav.ms-auto
         - if current_user
-          li.nav-item= link_to 'アイテム一覧', items_path, class: 'nav-link'
+          li.nav-item= link_to '貸出品一覧', items_path, class: 'nav-link'
           li.nav-item= link_to 'ユーザー一覧', admin_users_path, class: 'nav-link'
           li.nav-item= link_to 'ログアウト', logout_path, method: :delete, class: 'nav-link'
         - else

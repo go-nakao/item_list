@@ -1,11 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: user1
-  email: user1@sample.com
-  password_digest: MyString
+  id: 1
+  name: 暇人
+  email: sample@email.com
+  password_digest: password
+  created_at: Sun, 06 Feb 2022 21:43:49 JST +09:00
+  updated_at: Sun, 06 Feb 2022 21:43:49 JST +09:00
+  admin: false
 
 two:
-  name: MyString
-  email: MyString
+  id: 2
+  name: user2
+  email: user2@email.com
   password_digest: MyString
+  created_at: Sun, 06 Feb 2022 21:43:49 JST +09:00
+  updated_at: Sun, 06 Feb 2022 21:43:49 JST +09:00
+  admin: true
