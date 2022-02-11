@@ -1,6 +1,7 @@
 h1 貸出品一覧
 = link_to '貸出品新規登録', new_item_path, class: 'btn btn-primary me-3'
-= link_to '新規ユーザー登録', new_admin_user_path, class: 'btn btn-success'
+/ - if current_user.admin?
+/   = link_to '新規ユーザー登録', new_admin_user_path, class: 'btn btn-success'
 
 / 下側のマージンを1rem
 .mb-3
